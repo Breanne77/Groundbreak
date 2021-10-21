@@ -1,1 +1,1 @@
-[]
+[{"type":"Picture","Condition":"$gameSwitches.value(5) ==true","Layer":"0","Image":"Arrows","Scale X":"1.5","Scale Y":"1.5","Opacity":"255","Hue":"0","Blend":"0","animateInfo":{"x":{"spd":0,"loop":false,"min":0,"max":0},"y":{"spd":0,"loop":false,"min":0,"max":0},"s":{"spd":0.3,"loop":false,"min":1,"max":1.2},"r":{"spd":0,"loop":false,"min":0,"max":0}},"id":10,"x":408,"y":340}]

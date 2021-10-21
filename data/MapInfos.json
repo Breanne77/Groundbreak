@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":1090,"scrollY":292.6666666666667},
-{"id":2,"expanded":false,"name":"Lobby","order":3,"parentId":0,"scrollX":1758,"scrollY":315.3333333333333},
+{"id":2,"expanded":false,"name":"Lobby","order":3,"parentId":0,"scrollX":1709.8181818181818,"scrollY":313.09090909090907},
 {"id":3,"expanded":false,"name":"Horror Theatre","order":4,"parentId":0,"scrollX":545.3333333333334,"scrollY":293.3333333333333},
-{"id":4,"expanded":false,"name":"Scifi Theatre","order":2,"parentId":0,"scrollX":546,"scrollY":315.3333333333333}
+{"id":4,"expanded":false,"name":"Scifi Theatre","order":2,"parentId":0,"scrollX":658.9090909090909,"scrollY":313.09090909090907}
 ]
