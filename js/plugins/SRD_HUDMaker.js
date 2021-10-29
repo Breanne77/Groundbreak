@@ -30,7 +30,7 @@
  * SumRndmDde
  *
  *
- * This plugin allows developers to create their own map-based HUD through 
+ * This plugin allows developers to create their own map-based HUD through
  * an in-game GUI window!
  *
  *
@@ -43,7 +43,7 @@
  *   /img/SumRndmDde/hud/
  *
  *
- * They need to be segmented into four folders: 
+ * They need to be segmented into four folders:
  *  - pictures
  *  - numbers
  *  - gauge_images
@@ -59,7 +59,7 @@
  * ==============================================================================
  *  End of Help File
  * ==============================================================================
- * 
+ *
  * Welcome to the bottom of the Help file.
  *
  *
@@ -163,22 +163,22 @@ _.convertHex = function(hex, opacity){
 };
 
 _.blendNames = [
-	"Normal", 
-	"Add", 
-	"Multiply", 
-	"Screen", 
-	"Overlay", 
-	"Darken", 
-	"Lighten", 
-	"Color Dodge", 
-	"Color Burn", 
-	"Hard Light", 
-	"Soft Light", 
-	"Difference", 
-	"Exclusion", 
-	"Hue", 
-	"Saturation", 
-	"Color", 
+	"Normal",
+	"Add",
+	"Multiply",
+	"Screen",
+	"Overlay",
+	"Darken",
+	"Lighten",
+	"Color Dodge",
+	"Color Burn",
+	"Hard Light",
+	"Soft Light",
+	"Difference",
+	"Exclusion",
+	"Hue",
+	"Saturation",
+	"Color",
 	"Luminosity"
 ];
 
@@ -440,7 +440,8 @@ BattleHUD.prototype.updateVisibility = function() {
 // DataManager
 //-----------------------------------------------------------------------------
 
-DataManager._testExceptions.push(_.mapFile, _.battleFile);
+//commented out as part of Bugfix#1_UIissueonWebDeploy
+//DataManager._testExceptions.push(_.mapFile, _.battleFile);
 
 DataManager._databaseFiles.push(
 	{name: '$dataMapHUD', src: _.mapFile},
@@ -852,12 +853,12 @@ HUDManager.onSnapToggle = function() {
 	const container = MakerManager.document.getElementById('SnapButton');
 	const button = MakerManager.document.getElementById('snapButtonToggle');
 	if(!this.snapMode) {
-		container.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle"
 								style="background-color: ${_.relativeColor};" onclick="HUDManager.onSnapToggle()" />Snap Type: Relative</button></td>`;
 		this.snapMode = true;
 		this.getSprite().setupSnaps();
 	} else {
-		container.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle"
 								style="background-color: ${_.globalColor};" onclick="HUDManager.onSnapToggle()" />Snap Type: Global</button></td>`;
 		this.snapMode = false;
 		this.getSprite().setupSnaps();
@@ -868,12 +869,12 @@ HUDManager.onHighToggle = function() {
 	const container = MakerManager.document.getElementById('HighButton');
 	const button = MakerManager.document.getElementById('highButtonToggle');
 	if(!this.highlightType) {
-		container.innerHTML = `<td align="center"><button class="button" id="highButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="highButtonToggle"
 								style="background-color: ${_.overlayColor};" onclick="HUDManager.onHighToggle()" />Highlight: Overlay</button></td>`;
 		this.highlightType = true;
 		this.getHighlight().refreshColor();
 	} else {
-		container.innerHTML = `<td align="center"><button class="button" id="highButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="highButtonToggle"
 								style="background-color: ${_.surrondColor};" onclick="HUDManager.onHighToggle()" />Highlight: Surrond</button></td>`;
 		this.highlightType = false;
 		this.getHighlight().refreshColor();
@@ -884,11 +885,11 @@ HUDManager.onShowToggle = function() {
 	const container = MakerManager.document.getElementById('ShowButton');
 	const button = MakerManager.document.getElementById('showButtonToggle');
 	if(this.showPiecesType) {
-		container.innerHTML = `<td align="center"><button class="button" id="showButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="showButtonToggle"
 								style="background-color: ${_.surrondColor};" onclick="HUDManager.onShowToggle()" />Hidden Pieces: Hide</button></td>`;
 		this.showPiecesType = false;
 	} else {
-		container.innerHTML = `<td align="center"><button class="button" id="showButtonToggle" 
+		container.innerHTML = `<td align="center"><button class="button" id="showButtonToggle"
 								style="background-color: ${_.overlayColor};" onclick="HUDManager.onShowToggle()" />Hidden Pieces: Show</button></td>`;
 		this.showPiecesType = true;
 	}
@@ -907,24 +908,24 @@ HUDManager.forceUpdateOptions = function() {
 	const container2 = MakerManager.document.getElementById('HighButton');
 	const container3 = MakerManager.document.getElementById('ShowButton');
 	if(this.snapMode) {
-		container1.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle" 
+		container1.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle"
 								style="background-color: ${_.relativeColor};" onclick="HUDManager.onSnapToggle()" />Snap Type: Relative</button></td>`;
 	} else {
-		container1.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle" 
+		container1.innerHTML = `<td align="center"><button class="button" id="snapButtonToggle"
 								style="background-color: ${_.globalColor};" onclick="HUDManager.onSnapToggle()" />Snap Type: Global</button></td>`;
 	}
 	if(this.highlightType) {
-		container2.innerHTML = `<td align="center"><button class="button" id="highButtonToggle" 
+		container2.innerHTML = `<td align="center"><button class="button" id="highButtonToggle"
 								style="background-color: ${_.overlayColor};" onclick="HUDManager.onHighToggle()" />Highlight: Overlay</button></td>`;
 	} else {
-		container2.innerHTML = `<td align="center"><button class="button" id="highButtonToggle" 
+		container2.innerHTML = `<td align="center"><button class="button" id="highButtonToggle"
 								style="background-color: ${_.surrondColor};" onclick="HUDManager.onHighToggle()" />Highlight: Surrond</button></td>`;
 	}
 	if(!this.showPiecesType) {
-		container3.innerHTML = `<td align="center"><button class="button" id="showButtonToggle" 
+		container3.innerHTML = `<td align="center"><button class="button" id="showButtonToggle"
 								style="background-color: ${_.surrondColor};" onclick="HUDManager.onShowToggle()" />Hidden Pieces: Hide</button></td>`;
 	} else {
-		container3.innerHTML = `<td align="center"><button class="button" id="showButtonToggle" 
+		container3.innerHTML = `<td align="center"><button class="button" id="showButtonToggle"
 								style="background-color: ${_.overlayColor};" onclick="HUDManager.onShowToggle()" />Hidden Pieces: Show</button></td>`;
 	}
 };
@@ -1058,7 +1059,7 @@ HUDManager.createSelect = function(id) {
 		result += `<select id="${id}" onchange="HUDManager.refreshSprite()" style="width:100%">`;
 	} else {
 		result += `<select id="${id}" style="width:100%">`;
-	}			
+	}
 	for(let i = 1; i < arguments.length; i++) {
 		const info = arguments[i];
 		result += '<option value="' + info[0] + '" ' + info[1] + '>' + info[2] + '</option>';
@@ -1077,7 +1078,7 @@ HUDManager.createSelectArray = function(id, options) {
 		result += `<select id="${id}" onchange="HUDManager.refreshSprite()" style="width:100%">`;
 	} else {
 		result += `<select id="${id}" style="width:100%">`;
-	}	
+	}
 	for(let i = 0; i < options.length; i++) {
 		const info = options[i];
 		result += '<option value="' + info[0] + '" ' + info[1] + '>' + info[2] + '</option>';
@@ -1114,7 +1115,7 @@ HUDManager.createFilelist = function(id, folder, value, includeNone) {
 		result += `<select id="${id}" onchange="HUDManager.refreshSprite()" style="width:100%">`;
 	} else {
 		result += `<select id="${id}" style="width:100%">`;
-	}	
+	}
 	if(includeNone) {
 		if(value === "N\n\nONE") select = 'selected';
 		else select = '';
@@ -1332,7 +1333,7 @@ HUDManager.getControlsHtml = function() {
 				<table>
 					<style>
 						#Control {
-							width: 150px; 
+							width: 150px;
 							text-align: center;
 						}
 					</style>
@@ -1490,11 +1491,11 @@ HUDManager.getStyle = function() {
 			#scrollStuff::-webkit-scrollbar {
 				width: 1em;
 			}
-			 
+
 			#scrollStuff::-webkit-scrollbar-track {
 				background-color: ${gridHoverColor};
 			}
-			 
+
 			#scrollStuff::-webkit-scrollbar-thumb {
 				background-color: ${borderColor};
 				outline: 1px solid slategrey;
@@ -1627,11 +1628,11 @@ Game_Map.prototype.isEventRunning = function() {
 
 Object.defineProperties(Game_BattlerBase.prototype, {
     // Max TP
-    mtp: { 
-    	get: function() { 
-    		return this.maxTp(); 
-    	}, 
-    	configurable: true 
+    mtp: {
+    	get: function() {
+    		return this.maxTp();
+    	},
+    	configurable: true
     }
 });
 
@@ -1852,7 +1853,7 @@ Sprite_HUDCursor.prototype.refreshColor = function() {
 	} else {
 		this.fillSquare(color);
 	}
-	
+
 };
 
 Sprite_HUDCursor.prototype.createHudLines = function() {
@@ -2385,7 +2386,7 @@ HUDManager.types[Sprite_HUDText._label] = {
 
 Sprite_HUDText.prototype.initialize = function(info) {
 	Sprite_HUDObject.prototype.initialize.call(this, new Bitmap(1, 1), info);
-	this.properties = ["Layer", "Condition", "Max Width", "Font", "Align", "Font Size", "Text Color", "Text Alpha", 
+	this.properties = ["Layer", "Condition", "Max Width", "Font", "Align", "Font Size", "Text Color", "Text Alpha",
 						"Outline Color", "Outline Alpha", "Value"];
 	for(let i = 0; i < this.properties.length; i++) {
 		const prop = this.properties[i];
@@ -2659,7 +2660,7 @@ Sprite_HUDShape.getHtml = function(data) {
 				${HUDManager.createSelect("Shape", ["Rectangle", sele[0], "Rectangle"], ["Circle", sele[1], "Circle"])}
 				${HUDManager.createInput("Width", width)}
 				${HUDManager.createInput("Height", height)}
-				${HUDManager.createSelect("Fill Style",  ["solid", sele2[0], "Solid"], 
+				${HUDManager.createSelect("Fill Style",  ["solid", sele2[0], "Solid"],
 												["horizontal", sele2[1], "Horizontal Gradient"],
 												["vertical", sele2[2], "Vertical Gradient"],
 												["radical", sele2[3], "Radial Gradient"],
@@ -2709,7 +2710,7 @@ HUDManager.types[Sprite_HUDShape._label] = {
 
 Sprite_HUDShape.prototype.initialize = function(info) {
 	Sprite_HUDObject.prototype.initialize.call(this, new Bitmap(1, 1), info);
-	this.properties = ["Layer", "Condition", "Shape", "Width", "Height", "Fill Style", "Blend", "Color 1", "Color 1 Alpha", 
+	this.properties = ["Layer", "Condition", "Shape", "Width", "Height", "Fill Style", "Blend", "Color 1", "Color 1 Alpha",
 						"Color 2", "Color 2 Alpha", "Outline Size", "Outline Color", "Color 3 Alpha"];
 	for(let i = 0; i < this.properties.length; i++) {
 		const prop = this.properties[i];
@@ -3010,7 +3011,7 @@ Sprite_HUDCodeImage.prototype.getNewImage = function() {
 	}
 	return result;
 };
-	
+
 Sprite_HUDCodeImage.prototype.update = function() {
 	Sprite_HUDObject.prototype.update.call(this);
 	if(!this._isActive) return;
@@ -3169,7 +3170,7 @@ HUDManager.types[Sprite_HUDGauge._label] = {
 
 Sprite_HUDGauge.prototype.initialize = function(info) {
 	Sprite_HUDObject.prototype.initialize.call(this, new Bitmap(1, 1), info);
-	this.properties = ["Cur. Value", "Max Value", "Condition", "Layer", "Width", "Height", "Style", "Color 1", 
+	this.properties = ["Cur. Value", "Max Value", "Condition", "Layer", "Width", "Height", "Style", "Color 1",
 						"Color 1 Alpha", "Color 2", "Color 2 Alpha", "Back Color", "Color 4 Alpha", "Outline Size", "Outline Color", "Color 3 Alpha"];
 	for(let i = 0; i < this.properties.length; i++) {
 		const prop = this.properties[i];
@@ -3275,7 +3276,7 @@ Sprite_HUDImageGauge.getHtml = function(data) {
 	let condition = data["Condition"];
 	const layer = data["Layer"];
 	const scaleX = data["Scale X"];
-	const scaleY = data["Scale Y"];	
+	const scaleY = data["Scale Y"];
 	const fill = data["Style"];
 	const main = data["Main Image"];
 	const back = data["Back Image"];
@@ -3346,7 +3347,7 @@ HUDManager.types[Sprite_HUDImageGauge._label] = {
 
 Sprite_HUDImageGauge.prototype.initialize = function(info) {
 	Sprite_HUDObject.prototype.initialize.call(this, new Bitmap(1, 1), info);
-	this.properties = ["Cur. Value", "Max Value", "Condition", "Layer", "Scale X", "Scale Y", "Style", 
+	this.properties = ["Cur. Value", "Max Value", "Condition", "Layer", "Scale X", "Scale Y", "Style",
 						"Main Image", "Back Image"];
 	for(let i = 0; i < this.properties.length; i++) {
 		const prop = this.properties[i];
