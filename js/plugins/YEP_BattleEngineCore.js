@@ -4068,7 +4068,7 @@ Game_Battler.prototype.spriteFaceForward = function() {
 };
 
 Game_Battler.prototype.spriteFaceBackward = function() {
-    this.setMirror(false);
+    this.setMirror(true);
 };
 
 Game_Battler.prototype.spriteFacePoint = function(pointX, pointY) {
