@@ -29,9 +29,9 @@
  * SumRndmDde
  *
  *
- * This plugin is the core of all maker-style plugins; it adds a playtest editor 
+ * This plugin is the core of all maker-style plugins; it adds a playtest editor
  * that can be opened with F12 while playtesting. Using this editor, various
- * actions can be taken and different tools can be used to help test or 
+ * actions can be taken and different tools can be used to help test or
  * build one's game.
  *
  *
@@ -66,7 +66,7 @@
  *  Playtester
  * ==============================================================================
  *
- * The functions here are to support general playtesting. They involve using 
+ * The functions here are to support general playtesting. They involve using
  * quick and simple restarts, saves, and loads.
  *
  *
@@ -107,7 +107,7 @@
  *
  *   Theme
  *
- * Chooses the color scheme of the editor. 
+ * Chooses the color scheme of the editor.
  * "Absolute Randomness" generates random colors every time it is selected.
  *
  *
@@ -133,7 +133,7 @@
  * ==============================================================================
  *  End of Help File
  * ==============================================================================
- * 
+ *
  * Welcome to the bottom of the Help file.
  *
  *
@@ -181,15 +181,16 @@ function WindowManager() {
 }
 
 // Fix the flag check for 1.6 editor and 1.5 or below project
-if(process.versions['node-webkit'] >= "0.13.0" && Utils.RPGMAKER_VERSION < "1.6.0") {
+//commented out for Bugfix#1 UI issues on Web deploy
+//if(process.versions['node-webkit'] >= "0.13.0" && Utils.RPGMAKER_VERSION < "1.6.0") {
 
-Utils.isOptionValid = function(name) {
-	if (location.search.slice(1).split('&').contains(name)) {return 1;};
-	if (typeof nw !== "undefined" && nw.App.argv.length > 0 && nw.App.argv[0].split('&').contains(name)) {return 1;};
-	return 0;
-};
-
-}
+// Utils.isOptionValid = function(name) {
+// 	if (location.search.slice(1).split('&').contains(name)) {return 1;};
+// 	if (typeof nw !== "undefined" && nw.App.argv.length > 0 && nw.App.argv[0].split('&').contains(name)) {return 1;};
+// 	return 0;
+// };
+//
+// }
 
 (function(_) {
 
@@ -214,7 +215,8 @@ _.open = String(params['Auto Open Window']).trim().toLowerCase() === 'true';
 _.banList = JSON.parse(params['Menu Editor Exempt List']);
 
 _.isPlaytest = Utils.isOptionValid('test') && Utils.isNwjs();
-_.isNewNWjs = process.versions['node-webkit'] >= "0.13.0";
+//made true as part of Bugfix#1 UI issue on Web deploy
+_.isNewNWjs = true;//process.versions['node-webkit'] >= "0.13.0";
 
 if(_.isPlaytest && _.isNewNWjs) {
 	if(!require('fs').existsSync("supertoolsengine.html")) require('fs').writeFileSync("supertoolsengine.html", "<!DOCTYPE html><html><head><title></title></head><body></body></html>");
@@ -1221,7 +1223,7 @@ MakerManager.getStyle = function() {
 				transition: all 0.5s;
 				cursor: pointer;
 				margin: 5px;
-				vertical-align:middle; 
+				vertical-align:middle;
 				text-align: center;
 			}
 
@@ -1311,11 +1313,11 @@ MakerManager.getStyle = function() {
 			#scrollStuff::-webkit-scrollbar {
 				width: 1em;
 			}
-			 
+
 			#scrollStuff::-webkit-scrollbar-track {
 				background-color: ${scrollBack};
 			}
-			 
+
 			#scrollStuff::-webkit-scrollbar-thumb {
 				background-color: ${trueBackgroundColor};
 				outline: 1px solid slategrey;
@@ -2575,7 +2577,7 @@ WindowManager.getWindowList = function() {
 			if(!this._focusWindow) this._focusWindow = window;
 			result += '<option value="' + window.getWindowCode() + '">' + window.getWindowCode() + '</option>';
 		}
-	}, this);					
+	}, this);
 	result += '</select>';
 	return result;
 };
@@ -2712,7 +2714,7 @@ Scene_Base.prototype.setEditWindow = function(name) {
 	const children = this._windowLayer.children;
 	for(let i = 0; i < children.length; i++) {
 		const win = children[i];
-		if(win && win.getWindowCode() === name) { 
+		if(win && win.getWindowCode() === name) {
 			this._editWindow = win;
 			this._editWindowName = win.getWindowCode();
 			if(!$dataWindows[this.constructor.name][this._editWindowName]) $dataWindows[this.constructor.name][this._editWindowName] = {};
