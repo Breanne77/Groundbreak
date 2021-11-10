@@ -30,5 +30,7 @@ var $plugins =
 {"name":"SRD_TimedAttack_ActionSequences","status":true,"description":"Allows Timed Attacks to be called upon within Yanfly's Action Sequences.","parameters":{}},
 {"name":"battleFaceLeft","status":true,"description":"","parameters":{}},
 {"name":"PKD_VPlayer","status":true,"description":"v1.1 - Extended WEBM Video Player","parameters":{}},
-{"name":"No Attack  Guard","status":true,"description":"This plugin gives you the option to remove the 'Attack' and/or the 'Guard' command from the Actor Command Window.","parameters":{"Disable Attack":"0","Disable Guard":"0","Disable Items":"0"}}
+{"name":"No Attack  Guard","status":true,"description":"This plugin gives you the option to remove the 'Attack' and/or the 'Guard' command from the Actor Command Window.","parameters":{"Disable Attack":"0","Disable Guard":"0","Disable Items":"0"}},
+{"name":"EnemyBars","status":true,"description":"Makes enemy hp bar appear in battle.","parameters":{"High HP Color":"#009900","Medium HP Color":"#ffcc00","Low HP Color":"#ff6600","Critical HP Color":"#ff3300"}},
+{"name":"FELSKI_AUTOSAVE","status":true,"description":"v1.0.1 This plugin enables autosaving in your game. For RPG Maker MV 1.6.1.","parameters":{"Save Settings":"","Auto Save Slots":"2","Save After Map Change":"true","Save On Menu Exit":"true","Enable Auto Saving":"true","Save Texts":"","Auto Save Text":"Autosave","Save After Map Change Text":"Entering Area","Save On Menu Exit Text":"Closing Menu","Save Standard Text":"Normal Save"}}
 ];
