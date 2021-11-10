@@ -30,5 +30,6 @@ var $plugins =
 {"name":"SRD_TimedAttack_ActionSequences","status":true,"description":"Allows Timed Attacks to be called upon within Yanfly's Action Sequences.","parameters":{}},
 {"name":"battleFaceLeft","status":true,"description":"","parameters":{}},
 {"name":"PKD_VPlayer","status":true,"description":"v1.1 - Extended WEBM Video Player","parameters":{}},
-{"name":"No Attack  Guard","status":true,"description":"This plugin gives you the option to remove the 'Attack' and/or the 'Guard' command from the Actor Command Window.","parameters":{"Disable Attack":"0","Disable Guard":"0","Disable Items":"0"}}
+{"name":"No Attack  Guard","status":true,"description":"This plugin gives you the option to remove the 'Attack' and/or the 'Guard' command from the Actor Command Window.","parameters":{"Disable Attack":"0","Disable Guard":"0","Disable Items":"0"}},
+{"name":"HIME_FollowerEventTouch","status":true,"description":"v1.1 - when an event touches a follower, the event will be\r\ntriggered as if it touched the player.","parameters":{}}
 ];
