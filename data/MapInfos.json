@@ -1,11 +1,12 @@
 [
 null,
-{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
-{"id":2,"expanded":false,"name":"Lobby","order":3,"parentId":0,"scrollX":845.3333333333334,"scrollY":296.6666666666667},
-{"id":3,"expanded":false,"name":"Horror Theatre","order":4,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
-{"id":4,"expanded":false,"name":"Scifi Theatre","order":2,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
-{"id":5,"expanded":false,"name":"Intro_level","order":5,"parentId":0,"scrollX":1188.6666666666667,"scrollY":296.6666666666667},
-{"id":6,"expanded":false,"name":"Lower_Hallway","order":6,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
-{"id":7,"expanded":false,"name":"Upper_Hallway","order":7,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
-{"id":8,"expanded":false,"name":"Office","order":8,"parentId":0,"scrollX":1182,"scrollY":296.6666666666667}
+{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":546,"scrollY":315.3333333333333},
+{"id":2,"expanded":false,"name":"Lobby","order":3,"parentId":0,"scrollX":1758,"scrollY":315.3333333333333},
+{"id":3,"expanded":false,"name":"Horror Theatre","order":4,"parentId":0,"scrollX":975.3333333333334,"scrollY":296.6666666666667},
+{"id":4,"expanded":false,"name":"Scifi Theatre","order":2,"parentId":0,"scrollX":1114,"scrollY":296.6666666666667},
+{"id":5,"expanded":false,"name":"Intro_level","order":5,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
+{"id":6,"expanded":false,"name":"Lower_Hallway","order":9,"parentId":0,"scrollX":1504,"scrollY":296.6666666666667},
+{"id":7,"expanded":false,"name":"Upper_Hallway","order":6,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
+{"id":8,"expanded":false,"name":"Office","order":7,"parentId":0,"scrollX":546,"scrollY":296.6666666666667},
+{"id":9,"expanded":false,"name":"Pre_Lower_Hallway","order":8,"parentId":0,"scrollX":1146,"scrollY":296.6666666666667}
 ]
