@@ -5,7 +5,7 @@ null,
 {"id":3,"expanded":false,"name":"Horror Theatre","order":2,"parentId":0,"scrollX":819,"scrollY":446},
 {"id":4,"expanded":false,"name":"Scifi Theatre","order":5,"parentId":0,"scrollX":819.2,"scrollY":344.4},
 {"id":5,"expanded":false,"name":"Intro_level","order":3,"parentId":0,"scrollX":1676.8,"scrollY":344.4},
-{"id":6,"expanded":false,"name":"Lower_Hallway","order":4,"parentId":0,"scrollX":1585.6,"scrollY":344.4},
+{"id":6,"expanded":false,"name":"Lower_Hallway","order":4,"parentId":0,"scrollX":1586,"scrollY":446},
 {"id":7,"expanded":false,"name":"Upper_Hallway","order":8,"parentId":0,"scrollX":819.2,"scrollY":344.4},
 {"id":8,"expanded":true,"name":"Office","order":6,"parentId":0,"scrollX":909,"scrollY":446}
 ]
