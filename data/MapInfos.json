@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"ArcadeGame","order":7,"parentId":0,"scrollX":728,"scrollY":407.1111111111111},
-{"id":2,"expanded":false,"name":"Lobby","order":1,"parentId":0,"scrollX":728,"scrollY":400},
+{"id":2,"expanded":false,"name":"Lobby","order":1,"parentId":0,"scrollX":1768,"scrollY":400},
 {"id":3,"expanded":false,"name":"Horror Theatre","order":2,"parentId":0,"scrollX":728,"scrollY":400},
 {"id":4,"expanded":false,"name":"Scifi Theatre","order":5,"parentId":0,"scrollX":728,"scrollY":400},
 {"id":5,"expanded":false,"name":"Intro_level","order":3,"parentId":0,"scrollX":1768,"scrollY":400},
