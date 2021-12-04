@@ -1,6 +1,5 @@
 [
 null,
-<<<<<<< HEAD
 {"id":1,"expanded":false,"name":"ArcadeGame","order":7,"parentId":0,"scrollX":728,"scrollY":407.1111111111111},
 {"id":2,"expanded":false,"name":"Lobby","order":1,"parentId":0,"scrollX":1768,"scrollY":400},
 {"id":3,"expanded":false,"name":"Horror Theatre","order":2,"parentId":0,"scrollX":728,"scrollY":400},
@@ -9,14 +8,4 @@ null,
 {"id":6,"expanded":false,"name":"Lower_Hallway","order":4,"parentId":0,"scrollX":1200.888888888889,"scrollY":400},
 {"id":7,"expanded":false,"name":"Upper_Hallway","order":8,"parentId":0,"scrollX":2056,"scrollY":400},
 {"id":8,"expanded":true,"name":"Office","order":6,"parentId":0,"scrollX":1000,"scrollY":400}
-=======
-{"id":1,"expanded":false,"name":"ArcadeGame","order":7,"parentId":0,"scrollX":832,"scrollY":640},
-{"id":2,"expanded":false,"name":"Lobby","order":1,"parentId":0,"scrollX":782.5454545454545,"scrollY":313.09090909090907},
-{"id":3,"expanded":false,"name":"Horror Theatre","order":2,"parentId":0,"scrollX":896,"scrollY":313.09090909090907},
-{"id":4,"expanded":false,"name":"Scifi Theatre","order":5,"parentId":0,"scrollX":941.8181818181819,"scrollY":313.09090909090907},
-{"id":5,"expanded":false,"name":"Intro_level","order":3,"parentId":0,"scrollX":801.4545454545455,"scrollY":313.09090909090907},
-{"id":6,"expanded":false,"name":"Lower_Hallway","order":4,"parentId":0,"scrollX":1316.3636363636363,"scrollY":313.09090909090907},
-{"id":7,"expanded":false,"name":"Upper_Hallway","order":8,"parentId":0,"scrollX":1597.8181818181818,"scrollY":313.09090909090907},
-{"id":8,"expanded":true,"name":"Office","order":6,"parentId":0,"scrollX":594.1818181818181,"scrollY":313.09090909090907}
->>>>>>> BorisNedev_trellotickets,81,82,83,84
 ]
