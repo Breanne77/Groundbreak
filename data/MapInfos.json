@@ -1,11 +1,11 @@
 [
 null,
-{"id":1,"expanded":false,"name":"ArcadeGame","order":5,"parentId":0,"scrollX":728,"scrollY":407.1111111111111},
+{"id":1,"expanded":false,"name":"ArcadeGame","order":5,"parentId":0,"scrollX":546,"scrollY":305.3333333333333},
 {"id":2,"expanded":false,"name":"Lobby","order":1,"parentId":0,"scrollX":546,"scrollY":300},
-{"id":3,"expanded":false,"name":"Horror Theatre","order":8,"parentId":0,"scrollX":1912,"scrollY":400},
-{"id":4,"expanded":false,"name":"Scifi Theatre","order":4,"parentId":0,"scrollX":728,"scrollY":400},
+{"id":3,"expanded":false,"name":"Horror Theatre","order":8,"parentId":0,"scrollX":1912,"scrollY":300},
+{"id":4,"expanded":false,"name":"Scifi Theatre","order":4,"parentId":0,"scrollX":728,"scrollY":300},
 {"id":5,"expanded":false,"name":"Intro_level","order":2,"parentId":0,"scrollX":546,"scrollY":300},
 {"id":6,"expanded":false,"name":"Lower_Hallway","order":3,"parentId":0,"scrollX":728,"scrollY":300},
-{"id":7,"expanded":false,"name":"Upper_Hallway","order":6,"parentId":0,"scrollX":1623.111111111111,"scrollY":400},
-{"id":8,"expanded":true,"name":"Office","order":7,"parentId":0,"scrollX":590,"scrollY":300}
+{"id":7,"expanded":false,"name":"Upper_Hallway","order":6,"parentId":0,"scrollX":2060,"scrollY":300},
+{"id":8,"expanded":true,"name":"Office","order":7,"parentId":0,"scrollX":1182,"scrollY":300}
 ]
