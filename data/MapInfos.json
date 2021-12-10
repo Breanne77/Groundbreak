@@ -6,6 +6,6 @@ null,
 {"id":4,"expanded":false,"name":"Scifi Theatre","order":4,"parentId":0,"scrollX":611.3333333333334,"scrollY":315.3333333333333},
 {"id":5,"expanded":false,"name":"Intro_level","order":2,"parentId":0,"scrollX":814,"scrollY":315.3333333333333},
 {"id":6,"expanded":false,"name":"Lower_Hallway","order":3,"parentId":0,"scrollX":546,"scrollY":315.3333333333333},
-{"id":7,"expanded":false,"name":"Upper_Hallway","order":6,"parentId":0,"scrollX":2238,"scrollY":315.3333333333333},
+{"id":7,"expanded":false,"name":"Upper_Hallway","order":6,"parentId":0,"scrollX":961,"scrollY":473},
 {"id":8,"expanded":true,"name":"Office","order":7,"parentId":0,"scrollX":1182,"scrollY":315.3333333333333}
 ]
